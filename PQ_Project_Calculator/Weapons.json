@@ -1,0 +1,107 @@
+[
+  {
+    "ItemName": "HandCannon",
+    "Passive": false,
+    "OnUseStats": {
+      "Vit": 5,
+      "Spd": 3
+    },
+    "FireRate": 1.5,
+    "Shots": {
+      "Primary": 1
+    },
+    "Damages": [
+      {
+        "Min": 110,
+        "Max": 140,
+        "Type": "Normal"
+      }
+    ]
+  },
+
+  {
+    "ItemName": "Magical Leaf Dagger",
+    "Passive": false,
+    "OnUseStats": {},
+    "FireRate": 2.7,
+    "Shots": {
+      "Primary": 2
+    },
+    "Damages": [
+      {
+        "Min": 65,
+        "Max": 75,
+        "Type": "Normal",
+        "StatScaling": {
+          "Wis": 1
+        }
+      }
+    ]
+  },
+
+  {
+    "ItemName": "BloomWeaver",
+    "Passive": false,
+    "OnUseStats": {
+      "Vit": 20,
+      "Def": 8
+    },
+    "FireRate": 1.6,
+    "Shots": {
+      "Primary": 1
+    },
+    "Damages": [
+      {
+        "Min": 300,
+        "Max": 360,
+        "Type": "Normal",
+        "StatScaling": {
+          "Def": 2
+        }
+      }
+    ]
+  },
+
+  {
+    "ItemName": "Coldflame Sword",
+    "Passive": true,
+    "OnUseStats": {
+      "Vit": 24,
+      "Def": 9
+    },
+    "FireRate": 1.6,
+    "Shots": {
+      "Primary": 1
+    },
+    "Damages": [
+      {
+        "Min": 360,
+        "Max": 420,
+        "Type": "Normal"
+      }
+    ]
+  },
+
+  {
+    "ItemName": "Omnipotent Staff",
+    "Passive": false,
+    "OnUseStats": {},
+    "FireRate": 2.5,
+    "Shots": {
+      "Primary": 2,
+      "Secondary": 3
+    },
+    "Damages": [
+      {
+        "Min": 115,
+        "Max": 140,
+        "Type": "Percent40"
+      },
+      {
+        "Min": 40,
+        "Max": 50,
+        "Type": "True"
+      }
+    ]
+  }
+]

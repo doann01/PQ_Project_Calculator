@@ -1,0 +1,110 @@
+[
+  {
+    "ItemName": "Piercer's Flag",
+    "Passive": true,
+    "OnUseStats": {
+      "Dex": 10
+    },
+    "MPCost": 70,
+    "Cooldown": 10
+  },
+
+  {
+    "ItemName": "Seer/'s Incantation",
+    "Passive": true,
+    "OnUseStats": {
+      "Wis": 15,
+      "Atk": 10
+    },
+    "MPCost": 120,
+    "Cooldown": 1.5,
+    "Shots": {
+      "Primary": 6
+    },
+    "Damages": [
+      {
+        "Min": 160,
+        "Max": 200,
+        "Type": "True",
+        "StatScaling": {
+          "Mp": 0.45
+        }
+      }
+    ]
+  },
+
+  {
+    "ItemName": "Krampus Bomb",
+    "Passive": true,
+    "OnUseStats": {
+      "Dex": 12
+    },
+    "MPCost": 85,
+    "Cooldown": 1,
+    "Shots": {
+      "Primary": 1,
+      "Secondary": 5
+    },
+    "Damages": [
+      {
+        "Min": 500,
+        "Max": 500,
+        "Type": "Normal"
+      },
+      {
+        "Min": 250,
+        "Max": 250,
+        "Type": "Normal"
+      }
+    ]
+     
+  },
+
+  {
+    "ItemName": "Violet Stars",
+    "Passive": false,
+    "OnUseStats": {},
+    "MpCost": 80,
+    "Cooldown": 0.5,
+    "Shots": {
+      "Primary": 1,
+      "Secondary": 5
+    },
+    "Damages": [
+      {
+        "Min": 1300,
+        "Max": 1300,
+        "Type": "True"
+      },
+      {
+        "Min": 70,
+        "Max": 70,
+        "Type": "True",
+        "StatScaling": {
+          "Wis": 1.20
+        }
+      }
+    ]
+  },
+
+  {
+    "ItemName": "Tombstone Spell",
+    "Passive": false,
+    "OnUseStats": {
+      "Def": 5,
+      "Atk": 5
+    },
+    "MPCost": 85,
+    "Cooldown": 10,
+    "Shots": {
+      "Primary": 3
+    },
+    "Damages": [
+      {
+        "Min": 1200,
+        "Max": 1200,
+        "Type": "Normal"
+      }
+    ]
+  }
+]

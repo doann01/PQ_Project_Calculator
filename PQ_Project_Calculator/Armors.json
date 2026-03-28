@@ -1,0 +1,53 @@
+﻿[
+  {
+    "ItemName": "Turkey Garments",
+    "Passive": false,
+    "OnUseStats": {
+      "Def": 10,
+      "Atk": 26,
+      "Wis": 10
+    }
+  },
+
+  {
+    "ItemName": "Trickster/'s Vest",
+    "Passive": true,
+    "OnUseStats": {
+      "Def": 12,
+      "Dex": 24,
+      "Wis": 15,
+      "Spd": 8
+    }
+  },
+
+  {
+    "ItemName": "Jeweled Garments",
+    "Passive": true,
+    "OnUseStats": {
+      "Def": 8,
+      "Atk": 30,
+      "Wis": 15
+    }
+  },
+
+  {
+    "ItemName": "Witch/'s Garments",
+    "Passive": false,
+    "OnUseStats": {
+      "Def": 12,
+      "Dex": 20,
+      "Mp": 70,
+      "Wis": 10
+    }
+  },
+
+  {
+    "ItemName": "Crimson Robe",
+    "Passive": true,
+    "OnUseStats": {
+      "Def": 7,
+      "Atk": 30,
+      "Wis": 14
+    }
+  }
+]

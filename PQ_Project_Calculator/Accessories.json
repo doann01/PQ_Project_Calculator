@@ -1,0 +1,46 @@
+[
+  {
+    "ItemName": "Ghostly Crown(No Stack)",
+    "Passive": false,
+    "OnUseStats": {
+      "Atk": 5,
+      "Spd": 5
+    }
+  },
+
+  {
+    "ItemName": "Ghost Crown(Full Stack)",
+    "Passive": false,
+    "OnUseStats": {
+      "Atk": 25,
+      "Spd": 15
+    }
+  },
+
+  {
+    "ItemName": "Ring of the Molten Core",
+    "Passive": true,
+    "OnUseStats": {
+      "Def": 6,
+      "Wis": 22
+    }
+  },
+
+  {
+    "ItemName": "Ice Helm",
+    "Passive": true,
+    "OnUseStats": {
+      "Def": 8,
+      "Vit": 10
+    }
+  },
+
+  {
+    "ItemName": "Pixelween Hat",
+    "Passive": true,
+    "OnUseStats": {
+      "Atk": 12,
+      "Wis": 12
+    }
+  }
+]
