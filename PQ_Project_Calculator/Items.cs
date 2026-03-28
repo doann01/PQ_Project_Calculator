@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace PQ_Project_Calculator
 {
     internal class Items
@@ -10,8 +6,6 @@ namespace PQ_Project_Calculator
         public bool Passive { get; set; } = false;
         public string ItemName { get; set; } = "";
         public Passives ItemPassive { get; set; }
-        public int PassiveShots { get; set; }
-        public decimal PassiveDamage { get; set; }
 
         public Items() { }
 
