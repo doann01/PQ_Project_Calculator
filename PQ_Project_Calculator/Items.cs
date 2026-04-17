@@ -9,7 +9,7 @@ namespace PQ_Project_Calculator
 
         public Items() { }
 
-        public Items(bool passive, string itemName, Dictionary<string, int>? onUseStats)
+        public Items(bool passive, string itemName, Dictionary<string, int>? onUseStats) 
         {
             Passive = passive;
             ItemName = itemName;

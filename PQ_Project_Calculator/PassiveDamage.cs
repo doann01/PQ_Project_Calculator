@@ -7,7 +7,6 @@ namespace PQ_Project_Calculator
     internal class PassiveDamage:Passives
     {
         public bool IsAtkScaling { get; set; }
-        public bool IsDmgBoost { get; set; }
         public DamageTypes DamageType { get; set; }
 
         public override Damage Apply(Damage dmg, Stats stats, Weapons weapon, int enemyDef)
@@ -36,15 +35,12 @@ namespace PQ_Project_Calculator
                 damageMax *= weapon.Shots.Count;
             }
             PositiveEffect = weapon.PositiveEffect; //
-            NegativeEffect = weapon.NegativeEffect; //handle "burn/negative on hit" here
+            NegativeEffect = weapon.NegativeEffect; //Handle "burn/negative on hit" here. Poison as well
+                                                    //( I will totally delay poison as long as i can :) )
             
             if (IsAtkScaling){
                 damageMin *= (stats.Atk / 100m + 1);
                 damageMax *= (stats.Atk / 100m + 1);
-            }
-            if (IsDmgBoost){
-                dmg.Min *= (ValueMin / 10m);
-                dmg.Max *= (ValueMax / 10m);
             }
             dmg.Min += damageMin;
             dmg.Max += damageMax;

@@ -68,4 +68,17 @@ namespace PQ_Project_Calculator
             return DamageCalc(Average, stats, enemyDef);
         }
     }
+
+    internal enum DamageTypes
+    {
+        Normal,
+        True,
+        Percent40,
+        Percent60,
+        Burn,
+        Bleed,
+        Posion //I dont know how poison work so i think i will keep it empty until the release(?).
+            //or i can just gather info from others but :/
+    }
 }
+

@@ -4,35 +4,36 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class PassiveDamageBuff:Passives
+    internal class PassivecalcBuff:Passives
     {
         public DamageTypes DamageType { get; set; }
         public WeaponTypes WeaponType { get; set; }
         public AbilityTypes AbilityType { get; set; }
         public ArmorTypes ArmorType { get; set; }
         public AccessoryTypes AccessoryType { get; set; }
-        public DamageBuffTypes DmgBuffType { get; set; }
+        public calcBuffTypes DmgBuffType { get; set; }
 
         public override Damage Apply(Damage dmg)
         {
             if (!Enable) return dmg;
 
+            decimal calc = (Value / 100m + 1) * (ApplyChance / 100m);
+
             switch (DmgBuffType)
             {
-                case DamageBuffTypes.DmgType:
+                case calcBuffTypes.DmgType:
                     switch (DamageType)
                     {
                         case DamageTypes.Burn:
                         case DamageTypes.Normal:
-                            decimal damage = (Value / 100m + 1) * (ApplyChance / 100m);
-                            dmg.Min *= damage;
-                            dmg.Min *= damage;
+                            dmg.Min *= calc;
+                            dmg.Min *= calc;
                             break;
                         default:
                             break;
                     }
                     break;
-                case DamageBuffTypes.Weapon:
+                case calcBuffTypes.Weapon:
                     switch(WeaponType)
                     {
                         case WeaponTypes.Axe:
@@ -40,44 +41,41 @@ namespace PQ_Project_Calculator
                         case WeaponTypes.Dagger:
                         case WeaponTypes.Staff:
                         case WeaponTypes.Sword:
-                            decimal damage = (Value / 100m + 1) * (ApplyChance / 100m);
-                            dmg.Min *= damage;
-                            dmg.Min *= damage;
+                            dmg.Min *= calc;
+                            dmg.Min *= calc;
                             break;
                         default:
                             break;
                     }
                     break;
-                case DamageBuffTypes.Ability:
+                case calcBuffTypes.Ability:
                     switch (AbilityType)
                     {
                         case AbilityTypes.Bomb:
                         case AbilityTypes.Totem:
                         case AbilityTypes.Flag:
                         case AbilityTypes.Spell:
-                            decimal damage = (Value / 100m + 1) * (ApplyChance / 100m);
-                            dmg.Min *= damage;
-                            dmg.Min *= damage;
+                            dmg.Min *= calc;
+                            dmg.Min *= calc;
                             break;
                     }
                     break;
 
-                case DamageBuffTypes.Armor:
+                case calcBuffTypes.Armor:
                     switch (ArmorType)
                     {
                         case ArmorTypes.Heavy:
                         case ArmorTypes.Leather:
                         case ArmorTypes.Robe:
-                            decimal damage = (Value / 100m + 1) * (ApplyChance / 100m);
-                            dmg.Min *= damage;
-                            dmg.Min *= damage;
+                            dmg.Min *= calc;
+                            dmg.Min *= calc;
                             break;
                         default:
                             break;
                     }
                     break;
 
-                case DamageBuffTypes.Accessory:
+                case calcBuffTypes.Accessory:
                     switch (AccessoryType)
                     {
                         case AccessoryTypes.Boot:
@@ -89,9 +87,8 @@ namespace PQ_Project_Calculator
                         case AccessoryTypes.Gauntlet:
                         case AccessoryTypes.Bracelet:
                         case AccessoryTypes.Helmet:
-                            decimal damage = (Value / 100m + 1) * (ApplyChance / 100m);
-                            dmg.Min *= damage;
-                            dmg.Min *= damage;
+                            dmg.Min *= calc;
+                            dmg.Min *= calc;
                             break;
                         default:
                             break;
@@ -104,7 +101,7 @@ namespace PQ_Project_Calculator
         }
     }
 
-    internal enum DamageBuffTypes
+    internal enum calcBuffTypes
     {
         Weapon, Ability, Armor, Accessory, DmgType
     }

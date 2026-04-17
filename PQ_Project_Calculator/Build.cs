@@ -39,10 +39,10 @@ namespace PQ_Project_Calculator
             Stats total = new Stats(baseStats);
 
 
-            AddStats(total, Weapon?.OnUseStats);
-            AddStats(total, ActiveItem?.OnUseStats);
-            AddStats(total, Armor?.OnUseStats);
-            AddStats(total, Accessory?.OnUseStats);
+            AddStats(total, Weapon.OnUseStats);
+            AddStats(total, ActiveItem.OnUseStats);
+            AddStats(total, Armor.OnUseStats);
+            AddStats(total, Accessory.OnUseStats);
 
             return total;
         }
