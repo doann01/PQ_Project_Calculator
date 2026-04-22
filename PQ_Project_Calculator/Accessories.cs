@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class Accessories:Items
+    public class Accessories:Items
     {
         public List<Damage> Damages { get; set; } = new();
         public Dictionary<string, int> Shots { get; set; } = new();
@@ -18,7 +18,7 @@ namespace PQ_Project_Calculator
         }
     }
 
-    internal enum AccessoryTypes
+    public enum AccessoryTypes
     {
         Pendant,
         Hat,

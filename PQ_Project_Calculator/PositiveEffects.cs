@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal enum PositiveEffects
+    public enum PositiveEffects
     {
         Empty,
         IncreaseAtk,

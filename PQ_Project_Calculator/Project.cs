@@ -10,7 +10,7 @@ This is a reminder to myself, i will visualise the pipeline and make sure i have
 */
 namespace PQ_Project_Calculator
 {
-    internal class Project
+    public class Project
     {
         static void Main(string[] args)
         {

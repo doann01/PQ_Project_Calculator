@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class PassiveStatDecrease:Passives
+    public class PassiveStatDecrease:Passives
     {
         public StatTypes StatType { get; set; }
         public override Stats Apply(Stats stats)

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal abstract class Passives
+    public abstract class Passives
     {
         public string PassiveName { get; set; } = "";
         public bool Enable { get; set; } = true;

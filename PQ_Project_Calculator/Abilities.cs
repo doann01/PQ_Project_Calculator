@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class Abilities:Items
+    public class Abilities:Items
     {
         public List<Damage> Damages { get; set; } = new();
         public int MPCost { get; set; } = 0;
@@ -24,7 +24,7 @@ namespace PQ_Project_Calculator
         }
     }
 
-    internal enum AbilityTypes
+    public enum AbilityTypes
     {
         Totem,
         Spell,

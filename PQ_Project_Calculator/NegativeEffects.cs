@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal enum NegativeEffects
+    public enum NegativeEffects
     {
         Empty,
         Expose10,

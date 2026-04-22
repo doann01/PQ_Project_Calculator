@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class Stats
+    public class Stats
     {
         public int Vit { get; set; }
         public int Wis { get; set; }
@@ -44,7 +44,7 @@ namespace PQ_Project_Calculator
         }
     }
 
-    internal enum StatTypes
+    public enum StatTypes
     {
         Vit, Wis, Def, Dex, Atk, Spd, Mp, Hp, MpCurrent, HpCurrent
     }

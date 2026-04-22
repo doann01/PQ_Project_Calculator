@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class PassivecalcBuff:Passives
+    public class PassivecalcBuff:Passives
     {
         public DamageTypes DamageType { get; set; }
         public WeaponTypes WeaponType { get; set; }
@@ -101,7 +101,7 @@ namespace PQ_Project_Calculator
         }
     }
 
-    internal enum calcBuffTypes
+    public enum calcBuffTypes
     {
         Weapon, Ability, Armor, Accessory, DmgType
     }

@@ -1,6 +1,6 @@
 namespace PQ_Project_Calculator
 {
-    internal class Items
+    public class Items
     {
         public Dictionary<string, int> OnUseStats { get; set; } = new();
         public bool Passive { get; set; } = false;

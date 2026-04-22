@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class Weapons : Items
+    public class Weapons : Items
     {
         public List<Damage> Damages { get; set; } = new();
         public decimal FireRate { get; set; } = 0M;
@@ -23,7 +23,7 @@ namespace PQ_Project_Calculator
             Shots = shots ?? new Dictionary<string, int>();
         }
     }
-    internal enum WeaponTypes
+    public enum WeaponTypes
     {
         Sword,
         Bow,

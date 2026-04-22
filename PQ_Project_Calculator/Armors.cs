@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class Armors:Items
+    public class Armors:Items
     {
         public Armors() { }
 
@@ -21,7 +21,7 @@ namespace PQ_Project_Calculator
 
     }
 
-    internal enum ArmorTypes
+    public enum ArmorTypes
     {
         Heavy,
         Robe,

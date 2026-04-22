@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class PassiveDamage:Passives
+    public class PassiveDamage:Passives
     {
         public bool IsAtkScaling { get; set; }
         public DamageTypes DamageType { get; set; }

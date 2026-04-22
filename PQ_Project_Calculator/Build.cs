@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    internal class Build
+    public class Build
     {
         public decimal FinalDamage { get; set; }
         public Passives ItemPassive { get; set; }
@@ -12,7 +12,11 @@ namespace PQ_Project_Calculator
         public Abilities ActiveItem { get; set; }
         public Armors Armor { get; set; }
         public Accessories Accessory { get; set; }
-        
+        public Build()
+        {
+            
+        }
+
         private void AddStats(Stats stats, Dictionary<string, int> onUse)
         {
             if (onUse == null) return;

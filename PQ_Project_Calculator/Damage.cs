@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace PQ_Project_Calculator
 {
-    internal class Damage
+    public class Damage
     {
         public decimal Min { get; set; }
         public decimal Max { get; set; }
@@ -69,7 +69,7 @@ namespace PQ_Project_Calculator
         }
     }
 
-    internal enum DamageTypes
+    public enum DamageTypes
     {
         Normal,
         True,
