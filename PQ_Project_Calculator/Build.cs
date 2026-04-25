@@ -7,7 +7,6 @@ namespace PQ_Project_Calculator
     public class Build
     {
         public decimal FinalDamage { get; set; }
-        public Passives ItemPassive { get; set; }
         public Weapons Weapon { get; set; }
         public Abilities ActiveItem { get; set; }
         public Armors Armor { get; set; }
@@ -51,9 +50,17 @@ namespace PQ_Project_Calculator
             return total;
         }
 
-        public decimal DamageCalcFinal(Damage dmg, Stats stats)
+        public decimal BuildDpsMin(Damage dmg, Stats stats)
         {
-            decimal def0 = dmg.DamageCalcAvg(stats, 0);
+            decimal def0 = dmg.DamageCalcMin(stats, 0);
+
+            FinalDamage = def0 * (stats.Dex / 100m + 1) * Weapon.FireRate * Weapon.Shots.Count;
+
+            return FinalDamage;
+        }
+        public decimal BuildDpsMax(Damage dmg, Stats stats)
+        {
+            decimal def0 = dmg.DamageCalcMax(stats, 0);
 
             FinalDamage = def0 * (stats.Dex / 100m + 1) * Weapon.FireRate * Weapon.Shots.Count;
 

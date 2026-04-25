@@ -77,8 +77,7 @@ namespace PQ_Project_Calculator
         Percent60,
         Burn,
         Bleed,
-        Posion //I dont know how poison work so i think i will keep it empty until the release(?).
-            //or i can just gather info from others but :/
+        Posion //I dont know how poison works so i think i will keep it empty for now.
     }
 }
 

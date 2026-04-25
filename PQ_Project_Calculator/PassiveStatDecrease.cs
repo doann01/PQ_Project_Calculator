@@ -19,6 +19,9 @@ namespace PQ_Project_Calculator
                 case StatTypes.Mp:
                     stats.Mp -= Value;
                     break;
+                case StatTypes.Dex:
+                    stats.Dex -= Convert.ToInt16(Value);
+                    break;
                 default:
                     return stats;
             }

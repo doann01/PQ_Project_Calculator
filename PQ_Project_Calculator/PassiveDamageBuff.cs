@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PQ_Project_Calculator
 {
-    public class PassivecalcBuff:Passives
+    public class PassiveDamageBuff:Passives
     {
         public DamageTypes DamageType { get; set; }
         public WeaponTypes WeaponType { get; set; }
@@ -27,7 +27,7 @@ namespace PQ_Project_Calculator
                         case DamageTypes.Burn:
                         case DamageTypes.Normal:
                             dmg.Min *= calc;
-                            dmg.Min *= calc;
+                            dmg.Max *= calc;
                             break;
                         default:
                             break;
@@ -42,7 +42,7 @@ namespace PQ_Project_Calculator
                         case WeaponTypes.Staff:
                         case WeaponTypes.Sword:
                             dmg.Min *= calc;
-                            dmg.Min *= calc;
+                            dmg.Max *= calc;
                             break;
                         default:
                             break;
@@ -56,7 +56,7 @@ namespace PQ_Project_Calculator
                         case AbilityTypes.Flag:
                         case AbilityTypes.Spell:
                             dmg.Min *= calc;
-                            dmg.Min *= calc;
+                            dmg.Max *= calc;
                             break;
                     }
                     break;
@@ -68,7 +68,7 @@ namespace PQ_Project_Calculator
                         case ArmorTypes.Leather:
                         case ArmorTypes.Robe:
                             dmg.Min *= calc;
-                            dmg.Min *= calc;
+                            dmg.Max *= calc;
                             break;
                         default:
                             break;
@@ -88,7 +88,7 @@ namespace PQ_Project_Calculator
                         case AccessoryTypes.Bracelet:
                         case AccessoryTypes.Helmet:
                             dmg.Min *= calc;
-                            dmg.Min *= calc;
+                            dmg.Max *= calc;
                             break;
                         default:
                             break;

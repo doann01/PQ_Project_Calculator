@@ -6,7 +6,6 @@ namespace PQ_Project_Calculator
 {
     public class PassiveDamage:Passives
     {
-        public bool IsAtkScaling { get; set; }
         public DamageTypes DamageType { get; set; }
 
         public override Damage Apply(Damage dmg, Stats stats, Weapons weapon, int enemyDef)

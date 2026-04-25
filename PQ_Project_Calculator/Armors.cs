@@ -13,12 +13,6 @@ namespace PQ_Project_Calculator
         {
         }
 
-        public virtual Damage ApplyPassive(Damage dmg, Stats stats, Decimal PassiveFireRate)
-        {
-
-            return dmg;
-        }
-
     }
 
     public enum ArmorTypes
